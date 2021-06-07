@@ -1,0 +1,84 @@
+app:
+  port: 3003
+  site:
+    brand: Blockbound
+    logo: "/theme/logo.svg"
+    title: Blockbound
+    slogan: Written forever.
+    tagline: Instant & Secure Blockbound for Any Document.
+    email: test@blockbound.com
+    keywords:
+      - blockchain
+      - notary
+      - blockbound
+      - bitcoin
+      - p2p
+      - anonymous
+      - secure
+      - permanent
+      - distributed
+      - documents
+      - agreements
+      - contracts
+  url:
+    scheme: http
+    host: localhost
+    port: 3003
+  magicNumber: magic12345
+  defaultChain: btc
+  defaultNetwork: testnet
+
+social:
+  twitter: blockbound
+  telegram: EEP3LAyL8WvklWGsQ29F4g
+  github: blockbound-api
+
+services:
+  insight:
+    btc:
+      mainnet:
+        url: https://chain.so/api/v2/get_info/BTC
+        api: /api
+      testnet:
+        url: https://chain.so/api/v2/get_info/BTCTEST
+        api: /
+    bch:
+      mainnet:
+        url:
+        api: /api
+      testnet:
+        url:
+        api: /api
+
+mail:
+  from: testx@localhost
+  to: test@localhost
+
+nodemailer:
+  options:
+
+chains:
+  btc:
+    networks:
+      mainnet:
+        incomingPrivateKey: tprv8ZgxMBicQKsPe1eLwUmJR2DpajDHKA1pUGxvKYwD9qcLZm2QxmK8YiUyZ3E8xY8JAXZ1bTBAVtk41iQ3DBcHQUa8jgcoJw4ijjFzu35VkWe
+        outgoingPublicKey: tpubD6NzVbkrYhZ4XUg8q8RtpRsw9kjDUVCj3aZhc4yWa7QjQFHBbA8ijD6qjA9ySYsg5g5ubXE1Cd74g7kkV6LGKrJ3xjGhKjMb14sR5ELMV3o
+        documentPrice: 200000
+        feeMultiplier: 2
+      testnet:
+        incomingPrivateKey: tprv8ZgxMBicQKsPe1eLwUmJR2DpajDHKA1pUGxvKYwD9qcLZm2QxmK8YiUyZ3E8xY8JAXZ1bTBAVtk41iQ3DBcHQUa8jgcoJw4ijjFzu35VkWe
+        outgoingPublicKey: tpubD6NzVbkrYhZ4XUg8q8RtpRsw9kjDUVCj3aZhc4yWa7QjQFHBbA8ijD6qjA9ySYsg5g5ubXE1Cd74g7kkV6LGKrJ3xjGhKjMb14sR5ELMV3o
+        documentPrice: 100000
+        feeMultiplier: 4
+  bch:
+    networks:
+      mainnet:
+        incomingPrivateKey: xprvXXXXX
+        outgoingPublicKey: xprvXXXXX
+        documentPrice: 50000
+        feeMultiplier: 2
+      testnet:
+        incomingPrivateKey: tprvXXXXX
+        outgoingPublicKey: tpubXXXXX
+        documentPrice: 50000
+        feeMultiplier: 2
